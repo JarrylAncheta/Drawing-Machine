@@ -3,7 +3,10 @@ function setup() {
 }
 
 function draw() {
-  strokeWeight(7);
+  strokeWeight(11);
+  push();
+  translate(width/5.2,height/2.8);
+  scale(2.2,1.1);
   line(10, 10, 390, 10);
   line(50, 50, 350, 50);
   line(50, 250, 50, 50);
@@ -40,15 +43,17 @@ function draw() {
   line(90, 250, 50, 250);
   line(240, 90, 240, 130);
   line(170, 200, 130, 200);
+  pop();
 
-  background(900,100, 430, 1)
+  background(300,100, 930, 1)
 
   if (mouseIsPressed){
     stroke(map(mouseX, 200, 900, 2000, 1000, true))
     line(mouseX, mouseY, pmouseX, pmouseY);
+
+    }
   }
 
-}
 
   function keyTyped(){
 
