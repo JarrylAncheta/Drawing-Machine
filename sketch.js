@@ -18,7 +18,7 @@ function mousePressed() {
 function draw() {
   strokeWeight(11);
   push();
-  translate(width/5.2,height/2.8);
+  translate(width/7.2,height/3.8);
   scale(2.2,1.1);
   line(90, 90, 150, 90);
   line(150, 90, 150, 170);
