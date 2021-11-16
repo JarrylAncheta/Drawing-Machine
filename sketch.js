@@ -73,8 +73,6 @@ function draw() {
     if (key === 's'){
       //save image
       saveCanvas(`fileName`, `png`);
-    //} else if (key === `d`) {
-      //display image
     } else if (key ===`c`){
       //clear image
       clear();
