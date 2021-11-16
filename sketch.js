@@ -1,5 +1,18 @@
+var song;
+
 function setup() {
+  song = loadSound('FluffingADuck.mp3')
   createCanvas(windowWidth, windowHeight);
+}
+
+function mousePressed() {
+  if ( song.isPlaying() ) {
+    song.stop();
+    background(255);
+  } else {
+    song.play();
+    background(0);
+  }
 }
 
 function draw() {
