@@ -11,7 +11,7 @@ function mousePressed() {
     background(255);
   } else {
     song.play();
-    background(0);
+    background(190);
   }
 }
 
